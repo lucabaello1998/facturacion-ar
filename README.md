@@ -1,5 +1,7 @@
 # FacturacionAr
 
+[![Release](https://img.shields.io/github/v/release/lucabaello1998/facturacion-ar?label=release)](https://github.com/lucabaello1998/facturacion-ar/releases/latest)
+
 Biblioteca cliente .NET 8 para facturación electrónica argentina (AFIP / ARCA).
 
 Resuelve el armado de los mensajes SOAP de **WSAA** (autenticación con certificado,
