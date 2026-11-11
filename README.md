@@ -14,6 +14,10 @@ desarrollar y testear sin certificado real y sin tocar producción.
 > **Todos los datos de ejemplo son ficticios.** No se usan CUITs, puntos de venta
 > ni comprobantes reales. Este repo **no contiene credenciales**.
 
+![Salida real del CLI en modo simulado](docs/cli.png)
+
+Corrida real en modo simulado: CAE ficticio, sin credenciales.
+
 ## Flujo
 
 ```
