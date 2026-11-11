@@ -35,7 +35,7 @@ desarrollar y testear sin certificado real y sin tocar producción.
 ## Ejemplo de uso
 
 ```csharp
-using var cert = X509Certificate2.CreateFromPfxFile("mi_certificado.pfx", "clave");
+using var cert = new X509Certificate2("mi_certificado.pfx", "clave");
 using var transport = new HttpWsnTransport();
 
 var cli = new CliFacturacion(
