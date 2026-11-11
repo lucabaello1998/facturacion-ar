@@ -8,7 +8,8 @@ public sealed class HttpWsnTransport : IWsnTransport, IDisposable
 
     public HttpWsnTransport(HttpClient? httpClient = null)
     {
-        _httpClient = httpClient ?? new HttpClient();
+        // Sin timeout, una AFIP colgada deja el proceso esperando para siempre.
+        _httpClient = httpClient ?? new HttpClient { Timeout = TimeSpan.FromSeconds(30) };
     }
 
     public async Task<string> PostSoapAsync(
